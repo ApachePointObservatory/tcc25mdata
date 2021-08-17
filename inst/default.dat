@@ -24,6 +24,8 @@
 !            with data from JohnD mechanical collimation. 
 ! 2018-08-30 CS Set RotLim from -180,360 to -101, 255
 ! 2019-08-15 JD Secondary coefficients updated.
+! 2021-07-30 DL M2 coeffs updated, M1 coeffs zeroed due to new PrimMountOffset
+! 2021-08-06 DO/KG M1 coeffs updated following optical collimation with FSC
 
 ! Mirror Control
 
@@ -35,18 +37,17 @@
 PrimPistCoef       0.0       0.0       0.0
 ! Warning: the primary mirror sin and cos coefficients for tilt and translation must be zero,
 ! so that moving the telescope will not command a tilt or translation (which can induce a jump in tilt).
-! optical collimation on 9-02-19: KP 
-PrimXTiltCoef   -11.37       0.0       0.0
-PrimYTiltCoef     6.87       0.0       0.0
-PrimXTransCoef  375.47       0.0       0.0
-PrimYTransCoef  621.12       0.0       0.0
+
+PrimXTiltCoef   -31.23     0.0       0.0
+PrimYTiltCoef   -9.35      0.0       0.0
+PrimXTransCoef  -511.08    0.0       0.0
+PrimYTransCoef   1708      0.0       0.0
 
 SecPistCoef        0.0    -286.0       0.0
-SecXTiltCoef      11.1       0.0      -9.7
-SecYTiltCoef      14.8      -4.1       0.0
-SecXTransCoef    -36.3      -4.1       0.0
-SecYTransCoef   -248.7       0.0     467.9
-
+SecXTiltCoef       0.0       0.0       0.0 
+SecYTiltCoef       0.0       0.0       0.0
+SecXTransCoef      0.0       0.0       0.0
+SecYTransCoef   -286.0       0.0     379.0
 
 ! secondary piston (focus) temperature coefficients (in um/C)
 ! offset = Coef1 * secondary truss temp
