@@ -30,7 +30,7 @@
 ! 2023-10-26 DO Zeroed M1 coefficients in preparation for new optical collimation.
 !               M2 coefficients updated following mechanical collimation.
 ! 2023-11-07 DO Updated SecXTiltCoef const and SecYTransCoef const following tests
-                with Conor to improve collimation by tilting and translating M2.
+!                with Conor to improve collimation by tilting and translating M2.
 
 ! Mirror Control
 
